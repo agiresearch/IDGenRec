@@ -36,7 +36,7 @@ To train the model:
 3. You can change the `--dataset` to your desired dataset name.
 
 ### For Foundational Training
-We provide a fusion dataset under `./rec_datasets`, which mixes selected Amazon datasets. Please refer to the paper for dataset details.
+Please download the fusion dataset from [Google Drive Link](https://drive.google.com/drive/folders/1JedaL2GOxBarQTYQwKoBne_dPjDRPc52?usp=sharing) and place it under `./rec_datasets`, which mixes selected Amazon datasets. Please refer to the paper for dataset details.
 
 To train the foundation model, run:
 
