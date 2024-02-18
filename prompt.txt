@@ -1,0 +1,22 @@
+sequential; seen; Considering user {user_id} has interacted with items {history} . What is the next recommendation for the user ?; {target}
+sequential; seen; Here is the purchase history of user {user_id} : item {history} . I wonder what is the next recommended item for the user .; {target}
+sequential; seen; user {user_id} has purchased items {history}, predict next possible item to be bought by the user ?; {target}
+sequential; seen; I find the purchase list of user {user_id} : items {history} , I wonder what other itmes does the user need . Can you help me decide ?; {target}
+sequential; seen; According to what items user {user_id} has purchased : items {history} , Can you recommend another item to the user ?; {target}
+sequential; seen; What would user {user_id} be likely to purchase next after buying items {history} ?; {target}
+sequential; seen; By analyzing the user {user_id} 's purchase of items {history} , what is the next item expected to be bought ?; {target}
+sequential; seen; Can you recommend the next item for user {user_id} , given the user 's purchase of items {history} ?; {target}
+sequential; seen; After buying items {history} , what is the next item that could be recommended for user {user_id} ?; {target}
+sequential; seen; The user {user_id} has bought items : items {history} , What else do you think is necessary for the user ?; {target}
+sequential; unseen; What is the top recommended item for user {user_id} who interacted with item {history} ?; {target}
+straightforward; seen; What should we recommend for {dataset} user {user_id} ?; {dataset} {target}
+straightforward; seen; {dataset} user {user_id} is looking for some items . Do you have any recommendations ?; {target}
+straightforward; seen; Do you have any suggested items for {dataset} user {user_id} ?; {dataset} {target}
+straightforward; seen; Which recommendation should we provide to {dataset} user {user_id} ?; {dataset} {target}
+straightforward; seen; How can we assist {dataset} user {user_id} with a recommendation ?; {dataset} {target}
+straightforward; seen; What would be a suitable recommendation for {dataset} user {user_id} ?; {dataset} {target}
+straightforward; seen; What would be a helpful recommendation for {dataset} user {user_id} ?; {dataset} {target}
+straightforward; seen; Can you recommend an item for {dataset} user {user_id} ?; {dataset} {target}
+straightforward; seen; Based on {dataset} user {user_id} 's interests and requirements , what item would you suggest to try ?; {dataset} {target}
+straightforward; seen; For {dataset} user {user_id} , what item stands out as a top recommendation that they should consider ?; {dataset} {target}
+straightforward; unseen; What is the top recommendation for {dataset} user {user_id} ?; {dataset} {target}
