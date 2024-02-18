@@ -9,7 +9,7 @@ To better align Large Language Models (LLMs) with recommendation needs, we propo
 ### ID Generation Example
 
 <div align="center">
-    <img src="pic/id_generator.png" width="50%" />
+    <img src="pic/id_generator.png" width="70%" />
 </div>
 
 ### Paper Link: 
