@@ -1,6 +1,6 @@
 # IDGenRec
 ## Overview
-PyTorch implementation of the paper "IDGenRec: Towards Foundation LLM-based Generative Recommendation with Textual ID Learning".
+PyTorch implementation of the paper "IDGen: Towards LLM-RecSys Alignment with Textual ID Learning".
 
 ![](pic/overview.png)
 
