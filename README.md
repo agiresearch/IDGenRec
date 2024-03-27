@@ -45,4 +45,12 @@ To train the foundation model, run:
     ```
 
 ## Reference
-If you find this method useful, please consider citing the paper:
+
+```
+@inproceedings{tan2024towards,
+  title={Towards LLM-RecSys Alignment based on Textual ID Learning},
+  author={Juntao Tan and Shuyuan Xu and Wenyue Hua and Yingqiang Ge and Zelong Li and Yongfeng Zhang},
+  booktitle={Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)},
+  year={2024}
+}
+```
