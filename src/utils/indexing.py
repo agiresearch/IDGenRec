@@ -493,7 +493,7 @@ def generate_item_id_from_text(item_text_file_dir, item_id_file_dir, model_gen, 
 
     for iid, text in tqdm.tqdm(item_text_dict.items()):
         found = False
-        dp = 0.1  # penalty for diversity
+        dp = 1.  # penalty for diversity
         min_l = 1
         while not found:  # keep trying until generating an uniq id
             inputs = tokenizer([text], max_length=256, truncation=True, return_tensors="pt")
@@ -514,10 +514,10 @@ def generate_item_id_from_text(item_text_file_dir, item_id_file_dir, model_gen, 
                     if dp > max_dp:
                         max_dp = dp
                     break  # if found a new id, use it
-            dp += 0.1
-            if dp == 1:
+            dp += 1
+            if dp >= 10:
                 min_l += 10
-                dp = 0.1
+                dp = 1.
         item_id_dict[iid] = id
 
     with open(item_id_file_dir, "w") as f:
@@ -525,7 +525,7 @@ def generate_item_id_from_text(item_text_file_dir, item_id_file_dir, model_gen, 
             f.write(f"{key} {value}\n")
     
     model_gen.to(device)
-    print('max_dp: ', max_dp)
+    # print('max_dp: ', max_dp)
     return True
 
 def generate_user_id_from_text(item_map, user_index_file, user_sequence_file, model_gen, tokenizer):
@@ -551,12 +551,12 @@ def generate_user_id_from_text(item_map, user_index_file, user_sequence_file, mo
     user_id_dict = {}
     id_count_dict = {}
     count = 0
-    max_dp = 1
+    max_dp = 0
 
     for uid, text in tqdm.tqdm(user_seq_dict.items()):
         text = " ".join(text)
         found = False
-        dp = 0.1
+        dp = 1.
         min_l = 1
         while not found:  # keep trying until generating an uniq id
             inputs = tokenizer([text], max_length=256, truncation=True, return_tensors="pt")
@@ -579,10 +579,10 @@ def generate_user_id_from_text(item_map, user_index_file, user_sequence_file, mo
                     if dp > max_dp:
                         max_dp = dp
                     break  # if found a new id, use it
-            dp += 0.1
-            if dp == 1:  # increase length
+            dp += 1
+            if dp >= 10:  # increase length
                 min_l += 10
-                dp = 0.1
+                dp = 1.
         user_id_dict[uid] = id
 
     for key, value in user_seq_dict.items():
