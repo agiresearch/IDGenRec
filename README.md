@@ -1,4 +1,4 @@
-# IDGenRec
+# IDGenRec: LLM-RecSys Alignment with Textual ID Learning
 ## Overview
 PyTorch implementation of the paper "IDGenRec: Towards LLM-RecSys Alignment with Textual ID Learning".
 
