@@ -1,4 +1,7 @@
 # IDGenRec: LLM-RecSys Alignment with Textual ID Learning
+
+Note: A potential issue has been detected in the current version of the implementation. Please wait until we fix the issue before using the code.
+
 ## Overview
 PyTorch implementation of the paper "IDGenRec: Towards LLM-RecSys Alignment with Textual ID Learning".
 
